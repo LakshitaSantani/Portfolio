@@ -5,10 +5,10 @@ const About = () => {
     <div className="about-section" id="about">
       <div className="about-me">
         <h3 className="title">About Me</h3>
-        <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+        <p className="para" style={{ lineHeight: "1.5" }}>
+          Shipped and scaled AI products across sales, ecommerce, finance, healthcare.
+          <br /><br />
+          I help teams move from interesting demo to real product, real revenue.
         </p>
       </div>
     </div>

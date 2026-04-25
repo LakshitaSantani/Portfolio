@@ -13,14 +13,14 @@ import {
 
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
-  "/images/react2.webp",
-  "/images/next2.webp",
-  "/images/node2.webp",
-  "/images/express.webp",
-  "/images/mongo.webp",
-  "/images/mysql.webp",
-  "/images/typescript.webp",
-  "/images/javascript.webp",
+  "/images/stack/openai.svg",
+  "/images/stack/slack.svg",
+  "/images/stack/cursor.svg",
+  "/images/stack/vercel.svg",
+  "/images/stack/python.svg",
+  "/images/stack/googlegemini.svg",
+  "/images/stack/anthropic.svg",
+  "/images/stack/shopify.svg",
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
@@ -130,10 +130,11 @@ const TechStack = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
-      const threshold = document
-        .getElementById("work")!
-        .getBoundingClientRect().top;
-      setIsActive(scrollY > threshold);
+      const workSection = document.getElementById("work");
+      if (workSection) {
+        const threshold = workSection.offsetTop + workSection.offsetHeight - 200;
+        setIsActive(scrollY > threshold);
+      }
     };
     document.querySelectorAll(".header a").forEach((elem) => {
       const element = elem as HTMLAnchorElement;
@@ -168,7 +169,7 @@ const TechStack = () => {
 
   return (
     <div className="techstack">
-      <h2> My Techstack</h2>
+      <h2> AI & Product Toolkit</h2>
 
       <Canvas
         shadows
