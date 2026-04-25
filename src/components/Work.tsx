@@ -62,14 +62,14 @@ const Work = () => {
               category: "Agentic storefronts in 60 seconds",
               tools: "Make any Shopify store transactable through AI agents.\nBuilt on the Universal Commerce Protocol.",
               link: "https://github.com/SK-AIPM404/ucp-agentic-commerce",
-              image: "/images/placeholder.webp"
+              image: "/images/44f274a88bbe65a0e447106e0cbd241954cea6f6_2_690x362.jpeg"
             },
             {
               name: "GEO Audit",
               category: "Find out if AI search can see your site",
               tools: "GEO/SEO audit for ecommerce brands.",
               link: "https://github.com/SK-AIPM404/geo-audit",
-              image: "/images/nexus_ai_dashboard.png" 
+              image: "/images/nexus_ai_dashboard.png"
             },
             {
               name: "Subagent system",
