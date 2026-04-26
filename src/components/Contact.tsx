@@ -45,7 +45,7 @@ const Contact = () => {
               data-cursor="disable"
               className="contact-social"
             >
-              Twitter <MdArrowOutward />
+              X <MdArrowOutward />
             </a>
           </div>
           <div className="contact-box">

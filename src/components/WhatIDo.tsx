@@ -87,16 +87,10 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>PRODUCT</h3>
-              <div className="what-content-flex">
-                <div className="what-tags">Go-To-Market</div>
-                <div className="what-tags">Roadmap Dev</div>
-                <div className="what-tags">User Research</div>
-                <div className="what-tags">Growth Looping</div>
-                <div className="what-tags">Feature Specs</div>
-                <div className="what-tags">Data Analytics</div>
-                <div className="what-tags">Agile / Scrum</div>
-              </div>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', letterSpacing: '1px', textTransform: 'none' }}>Turn problems into products</h3>
+              <p style={{ fontSize: '0.95rem', color: '#ccc', lineHeight: '1.5', fontFamily: 'sans-serif' }}>
+                Scaling across the full product lifecycle — from taking a product to 33k+ users from scratch to shipping features inside mature orgs.
+              </p>
               <div className="what-arrow"></div>
             </div>
           </div>
@@ -119,16 +113,36 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>AI SYSTEMS</h3>
-              <div className="what-content-flex">
-                <div className="what-tags">Agentic AI Design</div>
-                <div className="what-tags">Claude Code</div>
-                <div className="what-tags">MCP</div>
-                <div className="what-tags">Prompt Eng.</div>
-                <div className="what-tags">API Connectors</div>
-                <div className="what-tags">Retrieval-Augmented Gen</div>
-                <div className="what-tags">Workflow Automation</div>
-              </div>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', letterSpacing: '1px', textTransform: 'none' }}>Build AI systems</h3>
+              <p style={{ fontSize: '0.95rem', color: '#ccc', lineHeight: '1.5', fontFamily: 'sans-serif' }}>
+                Shipped agents across industries that replaced months of manual work. Always starts with first principles - not frameworks.
+              </p>
+              <div className="what-arrow"></div>
+            </div>
+          </div>
+          <div
+            className="what-content what-noTouch"
+            ref={(el) => setRef(el, 2)}
+          >
+            <div className="what-border1">
+              <svg height="100%">
+                <line
+                  x1="0"
+                  y1="100%"
+                  x2="100%"
+                  y2="100%"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="6,6"
+                />
+              </svg>
+            </div>
+            <div className="what-corner"></div>
+            <div className="what-content-in">
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', letterSpacing: '1px', textTransform: 'none' }}>Wire GTM to the product</h3>
+              <p style={{ fontSize: '0.95rem', color: '#ccc', lineHeight: '1.5', fontFamily: 'sans-serif' }}>
+                It all boils down to selling. Generated $500K in new revenue, 50k installs/month on a $354 ad budget, and scaled a consulting org by 150%.
+              </p>
               <div className="what-arrow"></div>
             </div>
           </div>

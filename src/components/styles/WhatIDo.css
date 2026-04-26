@@ -14,6 +14,7 @@
 .what-box {
   width: 50%;
   display: flex;
+  align-items: center;
   justify-content: center;
   position: relative;
   z-index: 9;
@@ -33,34 +34,35 @@
   color: var(--accentColor);
 }
 .what-box-in {
+  display: none;
   flex-direction: column;
-  height: 500px;
+  justify-content: center;
+  align-items: center;
   margin-left: 200px;
   position: relative;
-  display: none;
 }
 .what-content {
   width: 450px;
-  height: 33%;
-  min-height: 50%;
+  height: 90px;
   transition: 0.5s;
   /* border: 0.5px dashed rgba(255, 255, 255, 0.3); */
   position: relative;
-  padding: 50px;
+  padding: 30px 40px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .what-noTouch:hover,
 .what-content-active {
-  min-height: 67%;
-  padding: 40px 50px;
+  height: 220px;
+  padding: 30px 40px;
 }
 
 .what-noTouch:hover ~ .what-content,
 .what-box-in:hover .what-noTouch:not(:hover),
 .what-content.what-sibling {
-  min-height: 33%;
-  padding: 10px 50px;
+  height: 90px;
+  padding: 30px 40px;
 }
 .what-content h3 {
   font-size: 35px;
@@ -72,6 +74,17 @@
   line-height: 18px;
   font-weight: 200;
   letter-spacing: 0.7px;
+  opacity: 0;
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out, margin 0.5s ease-in-out;
+}
+.what-noTouch:hover p,
+.what-content-active p {
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 10px;
 }
 .what-content h4 {
   font-weight: 300;
@@ -144,16 +157,22 @@
 }
 .what-arrow {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  top: 45px;
+  transform: translateY(-50%);
+  right: 25px;
   width: 25px;
   height: 25px;
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.what-arrow:hover {
+  border-color: #fff;
 }
 .what-arrow::before {
   content: "";
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
   border-left: 1px solid #fff;
@@ -199,7 +218,7 @@
   animation: whatBorders 1.2s 1 forwards;
 }
 .what-border2 svg {
-  height: 500px;
+  height: 100%;
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
@@ -248,9 +267,6 @@
   .what-box h2 {
     margin-right: 20%;
   }
-  .what-box-in {
-    height: 400px;
-  }
   .what-content h3 {
     font-size: 28px;
   }
@@ -290,7 +306,6 @@
     padding-bottom: 50px;
   }
   .what-box-in {
-    height: 500px;
     margin-left: -50px;
   }
   .what-content {
@@ -338,7 +353,7 @@
   }
   .what-box-in {
     margin-left: 0px;
-    height: 450px;
+    
   }
   .what-content h5,
   .what-content-flex {
