@@ -9,7 +9,9 @@
   width: var(--cWidth);
   max-width: 1920px;
   margin: auto;
-  z-index: 9;
+  z-index: 15;
+  transform: translateZ(0); /* Fixes z-indexing quirks on Safari/macOS */
+  -webkit-transform: translateZ(0);
 }
 .what-box {
   width: 50%;
@@ -17,7 +19,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 9;
+  z-index: 15;
 }
 .what-box h2 {
   font-size: calc(4vw + 25px);
