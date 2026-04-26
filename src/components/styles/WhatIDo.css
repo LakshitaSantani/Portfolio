@@ -25,8 +25,15 @@
   font-size: calc(4vw + 25px);
   line-height: calc(4vw + 20px);
   font-weight: 600;
-  margin-right: 10%;
+  margin-right: 20%;
   margin-bottom: 100px;
+}
+
+/* Specific macOS/Safari adjustment to pull the title further left */
+@supports (-webkit-backdrop-filter: blur(1px)) {
+  .what-box:first-child h2 {
+    transform: translateX(-5vw);
+  }
 }
 
 .hat-h2 {
